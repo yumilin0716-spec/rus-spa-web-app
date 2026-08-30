@@ -27,7 +27,7 @@ const products: Product[] = [
   { id: 8, brand: "SKEYNDOR", name: "菊精萃潔膚乳", area: "臉部", type: "清潔", purpose: "卸妝、溫和潔顏", skin: "敏感・乾性肌", expiry: "2028.09", stock: 7, tone: "cream", image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=85" },
 ];
 
-const sheetCsvUrl = "https://docs.google.com/spreadsheets/d/1doU5zaFEl9Aftnrd0STLt_zHcthDEu_VW9aoi4TZ4QA/gviz/tq?tqx=out:csv&sheet=%E5%95%86%E5%93%81%E4%B8%BB%E6%AA%94";
+const sheetCsvUrl = "/api/products";
 const fallbackImages = products.map((product) => product.image);
 
 function parseCsvRow(line: string) {

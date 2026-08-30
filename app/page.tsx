@@ -57,18 +57,6 @@ export default function Home() {
         <button className="menu-button" onClick={() => document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth" })}>瀏覽商品 <span>↗</span></button>
       </header>
 
-      <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow">CURATED SKINCARE INVENTORY</p>
-          <h1>把保養，<em>留給</em><br />真正需要的肌膚。</h1>
-          <p className="hero-description">Ru&apos;s SPA 的庫存選品，依照部位、保養步驟與肌膚需求重新整理，讓每一瓶都有清楚的位置。</p>
-          <div className="hero-actions"><button onClick={() => chooseArea("臉部")}>探索臉部保養 <span>↓</span></button><a href="#expiry">查看效期提醒</a></div>
-        </div>
-        <div className="hero-visual" aria-label="美容保養品陳列示意圖">
-          <div className="arch"></div><div className="sun-disc"></div><div className="hero-bottle tall"><i></i><b>R U &apos; S</b><small>RITUAL OIL</small></div><div className="hero-bottle short"><i></i><b>SKIN</b><small>SOFT CREAM</small></div><p>quiet care<br />for every day</p>
-        </div>
-      </section>
-
       <section className="inventory-strip">
         <div><strong>79</strong><span>已整理品項</span></div><div><strong>2</strong><span>肌膚照護部位</span></div><div><strong>4</strong><span>保養步驟分類</span></div><button onClick={() => { setFilter("2027 到期"); document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth" }); }}>2027 效期提醒 <span>↗</span></button>
       </section>

@@ -57,10 +57,6 @@ export default function Home() {
         <button className="menu-button" onClick={() => document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth" })}>瀏覽商品 <span>↗</span></button>
       </header>
 
-      <section className="inventory-strip">
-        <div><strong>79</strong><span>已整理品項</span></div><div><strong>2</strong><span>肌膚照護部位</span></div><div><strong>4</strong><span>保養步驟分類</span></div><button onClick={() => { setFilter("2027 到期"); document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth" }); }}>2027 效期提醒 <span>↗</span></button>
-      </section>
-
       <section className="areas" id="guide">
         <div className="section-heading"><p className="eyebrow">START WITH YOUR RITUAL</p><h2>從照護部位，開始挑選</h2><p>用最直覺的方式，找到今天的保養節奏。</p></div>
         <div className="area-grid">
